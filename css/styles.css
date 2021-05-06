@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+    z-index: -1;
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: 0% -430px, 100% 450px;
+}
+
+.continer-card {
+    width: 350px;
+    height: 380px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px hsl(185, 75%, 28%);
+    z-index: 2;
+}
+
+#pattern-card {
+    border-radius: 10px 10px 0 0;
+}
+
+#img-perfil {
+    border-radius: 50%;
+    border: solid 3px white;
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.card-information {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    height: 150px;
+    border-bottom: solid 1px rgb(194, 192, 192);
+}
+
+h3 {
+    margin-top: 1px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-top: 1px;
+    margin-bottom: 20px;
+    color: hsl(0, 0%, 59%);
+}
+
+span {
+    color: hsl(0, 0%, 59%);
+}
+
+.card-stadisticts {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 30px;
+}
+
+.card-stadisticts div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h3 {
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media(max-width: 1600px) {
+    .container {
+        background-position: -25% -430px, 120% 450px;
+    }
+}
+
+@media(max-width: 1440px) {
+    .container {
+        background-position: -55% -430px, 150% 450px;
+    }
+}
+
+@media(max-width: 1024px) {
+    .container {
+        background-position: -450px -430px, 450px 450px;
+    }
+}
+
+@media(max-width: 768px) {
+    .container {
+        background-position: -550px -430px, 380px 450px;
+    }
+}
+
+@media(max-width: 550px) {
+    .container {
+        background-position: -700px -430px, 200px 450px;
+    }
+    .continer-card,
+    #pattern-card {
+        width: 330px;
+    }
+}
+
+@media(max-width: 414px) {
+    .container {
+        background-position: -750px -530px, 200px 300px;
+    }
+}
+
+@media(max-width: 375px) {
+    .container {
+
+        background-position: -720px -630px, 150px 280px;
+    }
+}
